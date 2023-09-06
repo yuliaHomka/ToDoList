@@ -1,0 +1,5 @@
+<div *ngFor="let item of items" class="list">
+    <mat-checkbox [ngModel]="item.done" (ngModelChange)="onItemDoneChange(item)">{{item.value}}</mat-checkbox>
+    <!-- <div class="list__item">{{item}}</div> -->
+    <button mat-stroked-button (click)="onRemoveButtonClick(item)">remove item</button>
+</div>

@@ -1,0 +1,9 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+
+    &__item {
+        flex: 1;
+    }
+}
